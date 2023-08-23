@@ -23,6 +23,7 @@ T(Maximum observation sequence length) = 160 N(Number of hidden states) = 5
 ## Work Flow 
 
 **For Pre-Training**
+
   - Record 40 utterances for each of 10 words . This is our training data
   - Build universe of cepstral vectors using durbin's algo auto correlation method from our Training data
   - build codebook from Universe using LBG algorithm
@@ -36,6 +37,7 @@ T(Maximum observation sequence length) = 160 N(Number of hidden states) = 5
     final iteration
     
 **For Live Testing**
+
   Cropping(Start and End marker)
   First we have calculated the room’s silence ste. And used it as threshold.
   For the recorded audio(of 3 sec) we have cropped out the clip having ste greater than the threshold by
@@ -43,7 +45,8 @@ T(Maximum observation sequence length) = 160 N(Number of hidden states) = 5
   observation sequence for live utterance of cropped data . Finally we used forward procedure to calculate P(O/lambda) for each word’s model and output the word for which P(O/lambda) is maximum.
   
 **For Live Training**
-    In the front end we accept Speaker name ,number of words(vocabulary size) and number of utterances for each word in a form.A model with the Speaker name is build and stored and he/she has to provide  “word label” for each recorded word. Once the dataset is build. We train the model in similar fashion as we did for Pre-Training here number of words, word labels and number of utterances is         variable and given by user.
+
+In the front end we accept Speaker name ,number of words(vocabulary size) and number of utterances for each word in a form.A model with the Speaker name is build and stored and he/she has to provide  “word label” for each recorded word. Once the dataset is build. We train the model in similar fashion as we did for Pre-Training here number of words, word labels and number of utterances is         variable and given by user.
 
 ## Results
 We have a training accuracy of more than **95%.** and managed to get a live test accuracy of near about **65-75%** after applying our cropping algorithm
