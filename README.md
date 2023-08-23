@@ -23,16 +23,16 @@ T(Maximum observation sequence length) = 160 N(Number of hidden states) = 5
 ## Work Flow 
 
 **For Pre-Training**
-  -Record 40 utterances for each of 10 words . This is our training data
-  -Build universe of cepstral vectors using durbin's algo auto correlation method from our Training data
-  -build codebook from Universe using LBG algorithm
-  -Perform Vector quantization on each of digit and it's 40 utterances to form the observation sequence using
+  - Record 40 utterances for each of 10 words . This is our training data
+  - Build universe of cepstral vectors using durbin's algo auto correlation method from our Training data
+  - build codebook from Universe using LBG algorithm
+  - Perform Vector quantization on each of digit and it's 40 utterances to form the observation sequence using
     the codebook and universe and using tokhura distance as distance measure
-  -After having the observation sequences of each digit utterances we can do the training using HMM -We use 40 word utterances for training
-  -for each word we will iterate for training_iterations=3 number of times
-  -In 1st iteration we will use the initial biased model for every 40 utterances
-  -In subsequent iterations we will use the converged model as initial model from previous iterations -After every iteration we will get average of 40 converged models
-  -In the final iteration our final model for a word will be the average of the 40 converged models of
+  - After having the observation sequences of each digit utterances we can do the training using HMM -We use 40 word utterances for training
+  - for each word we will iterate for training_iterations=3 number of times
+  - In 1st iteration we will use the initial biased model for every 40 utterances
+  - In subsequent iterations we will use the converged model as initial model from previous iterations -After every iteration we will get average of 40 converged models
+  - In the final iteration our final model for a word will be the average of the 40 converged models of
     final iteration
     
 **For Live Testing**
