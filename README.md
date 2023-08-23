@@ -1,5 +1,5 @@
 # Speech Based Animal Name Translator
-Speech based English to Hindi Animal Name Translator is a final Speech Recognition Project made as a part of the course **CS566: Speech Processing ** taken by **Prof. Pradip Kr. Das, CSE, IITG**. This application is intended for children users especially them who are not aware of Hindi translation of common English Words. For our application we have taken animal names which will be given as voice input and our application will respond with a **voice(hindi translate),image,little paragraph** about the animal.The media response of our application is used for attracting more children users.
+Speech based English to Hindi Animal Name Translator is a final Speech Recognition Project made as a part of the course **CS566: Speech Processing** taken by **Prof. Pradip Kr. Das, CSE, IITG**. This application is intended for children users especially them who are not aware of Hindi translation of common English Words. For our application we have taken animal names which will be given as voice input and our application will respond with a **voice(hindi translate),image,little paragraph** about the animal.The media response of our application is used for attracting more children users.
 
 Project Contributors
 - Mayukh Das
