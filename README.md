@@ -12,13 +12,13 @@ We have used the **HMM** based modelling for our word recognition.For Universe b
 In Front End We have tried to make it very simple and used Visual C++ to design UI based on Windows Forms Applications.
 
 ## Vocabulary and Parameter used
-Vocabulary size = 10
-Vocabulary = {“cat”,”dog”,”horse”,”lion”,”tiger”,”monkey”,”rabbit”,”goat”,”cow”,”zebra”} Training utterance count of each word = 40
-(Cepstral vector dimension) p = 12
-Frame Size = 320
-Overlapped frames = 80
-Codebook Size(M) = 32
-T(Maximum observation sequence length) = 160 N(Number of hidden states) = 5
+- Vocabulary size = 10
+- Vocabulary = {“cat”,”dog”,”horse”,”lion”,”tiger”,”monkey”,”rabbit”,”goat”,”cow”,”zebra”} Training utterance count of each word = 40
+- (Cepstral vector dimension) p = 12
+- Frame Size = 320
+- Overlapped frames = 80
+- Codebook Size(M) = 32
+- T(Maximum observation sequence length) = 160 N(Number of hidden states) = 5
 
 ## Work Flow 
 
