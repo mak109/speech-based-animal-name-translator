@@ -46,8 +46,7 @@ T(Maximum observation sequence length) = 160 N(Number of hidden states) = 5
     In the front end we accept Speaker name ,number of words(vocabulary size) and number of utterances for each word in a form.A model with the Speaker name is build and stored and he/she has to provide  “word label” for each recorded word. Once the dataset is build. We train the model in similar fashion as we did for Pre-Training here number of words, word labels and number of utterances is         variable and given by user.
 
 ## Results
-We have a training accuracy of more than **95%.**
-But Still we managed to get a live test accuracy of near about **65-75%** after applying our cropping algorithm
+We have a training accuracy of more than **95%.** and managed to get a live test accuracy of near about **65-75%** after applying our cropping algorithm
 
 
 
